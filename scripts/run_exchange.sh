@@ -1,4 +1,0 @@
-CUDA_VISIBLE_DEVICES=0 nohup python run_short.py --dataset_name exchange_rate --window_size 98 --horizon  3 --hiddim 64 --chunk_size 7 --lr 1e-3 --batch_size 32 --model_name 'LightTS' --epochs 200 > exchange3.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 nohup python run_short.py --dataset_name exchange_rate --window_size 98 --horizon  6 --hiddim 64 --chunk_size 7 --lr 1e-3 --batch_size 32 --model_name 'LightTS' --epochs 200 > exchange6.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 nohup python run_short.py --dataset_name exchange_rate --window_size 98 --horizon 12 --hiddim 64 --chunk_size 7 --lr 1e-3 --batch_size 32 --model_name 'LightTS' --epochs 100 > exchange12.log 2>&1 &
-CUDA_VISIBLE_DEVICES=3 nohup python run_short.py --dataset_name exchange_rate --window_size 98 --horizon 24 --hiddim 64 --chunk_size 7 --lr 1e-3 --batch_size 32 --model_name 'LightTS' --epochs 100 > exchange24.log 2>&1 &

@@ -1,5 +1,0 @@
-CUDA_VISIBLE_DEVICES=0 python -u run_long.py --model_name 'LightTS' --data ECL --itr True --pred_len 48  --seq_len 192 --hiddim 128 --lr 4e-4 --batch_size 128 --train_epochs 15 --chunk_size 48 > electricity48.log 2>&1 &
-CUDA_VISIBLE_DEVICES=0 python -u run_long.py --model_name 'LightTS' --data ECL --itr True --pred_len 168 --seq_len 720 --hiddim 128 --lr 4e-4 --batch_size 128 --train_epochs 15 --chunk_size 72 > electricity168.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 python -u run_long.py --model_name 'LightTS' --data ECL --itr True --pred_len 336 --seq_len 720 --hiddim 128 --lr 4e-4 --batch_size 128 --train_epochs 15 --chunk_size 72 > electricity336.log 2>&1 &
-CUDA_VISIBLE_DEVICES=3 python -u run_long.py --model_name 'LightTS' --data ECL --itr True --pred_len 720 --seq_len 720 --hiddim 128 --lr 3e-4 --batch_size 128 --train_epochs 15 --chunk_size 72 > electricity720.log 2>&1 &
-CUDA_VISIBLE_DEVICES=1 python -u run_long.py --model_name 'LightTS' --data ECL --itr True --pred_len 960 --seq_len 960 --hiddim 128 --lr 3e-4 --batch_size 128 --train_epochs 15 --chunk_size 80 > electricity960.log 2>&1 &

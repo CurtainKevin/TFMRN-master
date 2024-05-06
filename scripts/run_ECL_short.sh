@@ -1,4 +1,0 @@
-CUDA_VISIBLE_DEVICES=1 nohup python run_short.py --dataset_name electricity --window_size 168 --horizon  3 --chunk_size 24 --hiddim 256 --lr 1e-5 --batch_size 4 --model_name 'LightTS' --single_step 1 --epochs 200 > electricity3s.log 2>&1 &
-CUDA_VISIBLE_DEVICES=2 nohup python run_short.py --dataset_name electricity --window_size 168 --horizon  6 --chunk_size 24 --hiddim 256 --lr 1e-5 --batch_size 4 --model_name 'LightTS' --single_step 1 --epochs 200 > electricity6s.log 2>&1 &
-CUDA_VISIBLE_DEVICES=3 nohup python run_short.py --dataset_name electricity --window_size 168 --horizon 12 --chunk_size 24 --hiddim 256 --lr 1e-5 --batch_size 4 --model_name 'LightTS' --single_step 1 --epochs 200 > electricity12s.log 2>&1 &
-CUDA_VISIBLE_DEVICES=0 nohup python run_short.py --dataset_name electricity --window_size 168 --horizon 24 --chunk_size 24 --hiddim 256 --lr 1e-5 --batch_size 4 --model_name 'LightTS' --single_step 1 --epochs 200 > electricity24s.log 2>&1 &
